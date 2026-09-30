@@ -9,6 +9,7 @@ const Stairs = (props) => {
     console.log("currentPathLocation", currentPathLocation);
 
 
+    // UseEffect to scroll to the top of the page whenever the currentPathLocation changes. This ensures that when navigating to a new route, the user starts at the top of the page.
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [currentPathLocation]);
